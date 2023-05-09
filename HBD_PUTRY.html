@@ -43,15 +43,16 @@ var audio = new Audio('https://kuisberhadiah.likeadream.repl.co/musiktiktok.m4a'
                 backdrop: 'rgba(0,0,123,0.4)', confirmButtonColor: '#003EFF', cancelButtonColor: '#FF0040', allowOutsideClick: false,
             });
             async function mulai(){          	
-                var { value: nama } = await swals.fire({
-                    title: 'Nama kamu?',
-                    input: 'text',
-                    confirmButtonText: 'Lanjut',
-                    showCancelButton: false,
-                });                           
-                if(nama && nama.length < 11){
+                // var { value: nama } = await swals.fire({
+                //     title: 'Nama kamu?',
+                //     input: 'text',
+                //     confirmButtonText: 'Lanjut',
+                //     showCancelButton: false,
+                // });                           
+                // if(nama && nama.length < 11){
+                if(true){
                 	play();
-                	window.nama = nama;
+                	window.nama = "Putri";
                     await swals.fire('Hai, ' + nama + ' manis ツ');                    
                     await swals.fire('Cie yang hari ini ultah &#128514;');
                     await swals.fire('Selamat ulang tahun!');
