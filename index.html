@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALAMAN ALAY</title>
+</head>
+<body>
+    <h1>HBD Putri</h1>
+    <ol>
+        <li>HBD PUt AOWkowakwaokwao...asw....itu aja sih :V</li>
+        <li>moga cepet daper hidayah</li>
+        <li>moga kuat sama tugas</li>
+        <li>moga ga gampang depresi</li>
+        <li>moga doi lu cepet login ke islam :V kalo ga login percuma ajer...kek hunungan di batasi sama 7 samudra :V</li>
+    </ol>
+    <h2>moga kamu :</h2>
+    <ul id="list">
+    </ul>
+</body>
+<script>
+    const list = document.getElementById("list")
+    const message = `
+        sadar,
+        bahagia,
+        jadi anak nurut,
+        mood good terus,
+        disayangi banyak orang,
+        jadi cumlaude bersama ALLI :),
+        jadi ULTRAMEN BERSAMA ALI :)`;
+    let counter = 0;
+    const retype = () => {
+        if(counter < message.length) {
+            list.innerHTML += message.charAt(counter);
+            setTimeout(retype, 50)
+            counter++;
+        }
+    }
+    retype();
+</script>
+</html>
